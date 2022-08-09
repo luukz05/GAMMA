@@ -609,11 +609,12 @@ div.planos-content-right{
         background-color: #ffffff;
         overflow-x: hidden;
     }
+
     div.logo img{
         height: 700px;
     }
     div.slogan{
-        font-size: 100px;
+        transform: scale(1.5);
         height: 700px;
         
     }
@@ -625,18 +626,16 @@ div.planos-content-right{
     div.areas_atuacao{  
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 34vh;
+        justify-content: space-evenly;
+        font-size: 17px;
         row-gap: 15vh;
         
     }
-    div.catalogo{
-        transform: scale(1.2);
-       }
     div.pagina-conteudo-esquerda {
         background: #aaa;
         border-radius: 20px;
-        flex: .5;
+        flex: .8;
+        margin-left: 32px;
         position: relative;
         transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         background-repeat: no-repeat;
@@ -648,19 +647,20 @@ div.planos-content-right{
         flex-direction: column;
         gap: 15px;
         width: 400px;
-        
+        margin: 32px;
     }
     div.pagina-conteudo {
         display: flex;
         gap: 15px;
-        margin-left: 100px;
-        margin-right: 100px;
+        
         transform: scale(1.1);
         justify-content: center;
+        margin-top: 100px;
+        margin-bottom:100px ;
     }
     div.about{
-        margin-left: 500px;
-        margin-right: 500px;
+        margin-left: 200px;
+        margin-right: 200px;
         margin-bottom: 20px;
         font-size: 20px;
     }
@@ -688,3 +688,56 @@ div.planos-content-right{
     }
     
 }
+@media only screen and (width: 1024px) {
+    div.slogan{
+        font-size: 50px;
+        margin: 32px;
+    }
+    div.about{
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 15px;
+    }
+    span.signature{
+        font-size: 14px;
+    }
+    div.areas_atuacao{  
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5vh;
+        row-gap: 5vh;
+        
+    }
+    div.content-planos p{
+        font-size: 14px;
+    }
+    div.pagina-conteudo-esquerda {
+        background: #aaa;
+        border-radius: 20px;
+        flex: 1;
+        margin-left: 32px;
+        position: relative;
+        transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    div.pagina-conteudo-direita {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 320px;
+        margin: 32px;
+        height: 800px;
+        justify-content: center;
+    }
+    div.pagina-conteudo {
+        display: flex;
+        gap: 0;
+        margin-left: 0;
+        margin-right:0;
+        justify-content: center;
+    }
+}
+
