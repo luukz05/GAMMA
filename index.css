@@ -45,10 +45,6 @@ a.barra{
     color: rgb(255, 255, 255);
     
 }
-a:link{
-    color: rgb(255, 255, 255);
-}
-
 a:visited{
     color: rgb(255, 255, 255);
 }
@@ -67,10 +63,8 @@ div.links a:hover{
 }
 div.logo{
     display: flex;
-    justify-content: right;
-    margin-right: 27vh;
     align-content: center;
-    
+    justify-content: space-evenly;
     background-color: rgba(255, 255, 255, 0);
 }
 .about{
@@ -514,7 +508,7 @@ a.contato_link:hover{
     transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .site-index{
-    transform: scale(1.07);
+
     color: #fff;
     padding-left: 0;
 }
@@ -540,15 +534,21 @@ div.desc-text{
     
 }
 
-div.standard,div.premium,div.black{
+div.standard,div.premium,div.black,div.perso{
     background-color: #ffffff00;
     outline: #fff solid 1px;
     height: 200px;
     width: 90%;
-    
     border-radius: 32px;
-    transition: 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+/* div.perso:hover{
+    color: #dd53ff;
+    transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 0 30px 0 rgb(33, 43, 38);
+    background: rgb(206, 213, 255);
+   
+} */
 div.standard:hover{
     color: #7a7a7a;
     transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -569,7 +569,6 @@ div.black:hover{
     box-shadow: 0 0 30px 0 rgb(33, 43, 38);
     background-color: rgb(133, 133, 133);
 }
-
 
 div.planos-content-left{
     display: flex;
@@ -740,4 +739,3 @@ div.planos-content-right{
         justify-content: center;
     }
 }
-
